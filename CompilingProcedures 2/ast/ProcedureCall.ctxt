@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ProcedureCall
+comment0.text=\n\ This\ class\ represents\ calls\ to\ procedures\ from\ the\ body\ of\ Pascal\n\ programs.\ Each\ class\ contains\ a\ List\ of\ Expressions\ representing\ the\n\ values\ of\ the\ parameters\ of\ the\ procedure.\n\n\ @author\ Arun\ Sundaresan\n\ @version\ October\ 14,\ 2019\n
+comment1.params=id\ params
+comment1.target=ProcedureCall(java.lang.String,\ java.util.List)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ProcedureCall\n\ \n\ @param\ id\ the\ name\ of\ the\ procedure\ being\ called\n\ @param\ params\ the\ Expressions\ representing\ the\ \n\ \ \ \ \ \ values\ of\ the\ parameters\n
+comment2.params=env
+comment2.target=int\ eval(environment.Environment)
+comment2.text=\n\ Evaluates\ the\ procedure\ call.\ This\ method\ creates\ a\ local\ environment\n\ and\ evaluates\ the\ parameters\ in\ it.\ The\ statement\ of\ the\ procedure\ is\n\ then\ executed\ and\ an\ integer\ is\ returned\ representing\ the\ return\n\ value\ of\ the\ procedure.\n\ \n\ @param\ env\ the\ Environment\ in\ which\ to\ evaluate\ the\ procedure\ call\n\ @return\ an\ integer\ is\ returned\ representing\ the\ return\n\ \ \ \ \ \ \ \ \ \ value\ of\ the\ procedure.\n
+comment3.params=e
+comment3.target=void\ compile(emitter.Emitter)
+comment3.text=\n\ Converts\ procedure\ calls\ in\ a\ simplified\ Pascal\ language\ to\ \n\ MIPS\ by\ pushing\ the\ return\ address,\ pushing\ all\ parameters,\n\ emitting\ a\ jump-and-link\ instruction,\ popping\ all\ parameters,\ \n\ and\ popping\ the\ return\ address.\n\ \n\ @param\ e\ the\ Emitter\ that\ writes\ MIPS\ code\ to\ a\ file\n
+numComments=4
